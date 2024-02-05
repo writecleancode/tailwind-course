@@ -1,24 +1,54 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" class="bg-darkSlateGrey">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS</title>
+    <title>Tailwind CSS | Newsletter sign-up form with success message</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="bg-stone-800">
+<body class="lg:h-screen lg:flex lg:justify-center lg:items-center">
 
-    <div class="flex md:flex-col lg:flex-row">
-        <div class="rounded-xl w-32 h-32 bg-red-500"></div>
-        <div class="rounded-xl w-32 h-32 bg-green-500"></div>
-        <div class="rounded-xl w-32 h-32 bg-blue-500"></div>
-    </div>
-
-    <div
-        class="w-[600px] h-[300px] hover:bg-slate-400 transition-colors flex justify-center items-end lg:items-start my-10 bg-slate-200">
-        <div class="w-32 h-32 bg-amber-400"></div>
+    <div class="w-[375px] mx-auto bg-white lg:flex lg:w-[928px] lg:p-6 lg:rounded-[2rem]">
+        <img class="w-full lg:hidden" src="./img/illustration-sign-up-mobile.svg" alt="">
+        <div class="mt-8 mx-auto px-6 pb-8 text-darkSlateGrey lg:my-auto lg:mr-6 lg:px-10">
+            <p class="text-4xl font-bold lg:text-[3.5rem]">Stay updated!</p>
+            <p class="mt-4 lg:mt-8">Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul class=" mt-6">
+                <li class="flex items-start">
+                    <img src="./img/icon-list.svg" alt="" class="mr-4">
+                    <p>Product discovery and building what matters</p>
+                </li>
+                <li class="flex items-start mt-3">
+                    <img src="./img/icon-list.svg" alt="" class="mr-4">
+                    <p>Measuring to ensure updates are a success</p>
+                </li>
+                <li class="flex items-start mt-3">
+                    <img src="./img/icon-list.svg" alt="" class="mr-4">
+                    <p> And much more!</p>
+                </li>
+            </ul>
+            <div class="flex flex-col mt-12">
+                <label for="email" class="mb-2 text-xs font-bold ">Email address</label>
+                <input type="text" id="email" name="email" placeholder="email@company.com"
+                    class="px-6 py-3 border border-slate-300 rounded-lg">
+            </div>
+            <button type="button"
+                class="group relative inline-block w-full mt-6 px-6 py-3 rounded-lg  bg-pink-tomato-gradient text-white font-bold">Subscribe
+                to monthly newsletter
+                <span
+                    class="absolute inset-0 rounded-lg shadow-[0_12px_16px_rgba(254,82,122,0.35)] opacity-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-100 lg:shadow-[0_16px_16px_rgba(254,82,122,0.25)]"></span>
+                <span
+                    class="absolute inset-0 flex justify-center items-center rounded-lg bg-darkSlateGrey pointer-events-none transition-opacity duration-300 group-hover:opacity-0">Subscribe
+                    to monthly newsletter</span>
+            </button>
+        </div>
+        <img class="hidden lg:inline-block" src="./img/illustration-sign-up-desktop.svg" alt="">
     </div>
 
 </body>
