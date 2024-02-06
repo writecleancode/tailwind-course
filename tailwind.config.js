@@ -4,16 +4,21 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Roboto', 'sans-serif'],
+				sans: ['Rubik', 'sans-serif'],
 			},
 			colors: {
-				darkSlateGrey: 'hsl(234, 29%, 20%)',
-				charcoalGrey: 'hsl(235, 18%, 26%)',
-				grey: 'hsl(231, 7%, 60%)',
-				tomato: 'hsl(4, 100%, 67%)',
-			},
-			backgroundImage: {
-				'pink-tomato-gradient': 'linear-gradient(90deg, #fe527a 0%, hsl(4, 100%, 67%) 100%)',
+				blue: 'hsl(246, 80%, 60%)',
+				lightOrange: 'hsl(15, 100%, 70%)',
+				softBlue: 'hsl(195, 74%, 62%)',
+				lightRed: 'hsl(348, 100%, 68%)',
+				limeGreen: 'hsl(145, 58%, 55%)',
+				violet: 'hsl(264, 64%, 52%)',
+				softOrange: 'hsl(43, 84%, 65%)',
+				veryDarkBlue: 'hsl(226, 43%, 10%)',
+				darkBlue: 'hsl(235, 46%, 20%)',
+				darkBlueHover: 'hsl(235, 46%, 34%)',
+				desaturatedBlue: 'hsl(235, 45%, 61%)',
+				paleBlue: 'hsl(236, 100%, 87%)',
 			},
 		},
 	},
