@@ -17,6 +17,7 @@ module.exports = {
 				dirtyWhite: '#fafafa',
 				white20: '#ffffff33',
 				deepBlue: '#0000ee',
+				orange: 'rgb(255, 146, 104)',
 			},
 			backgroundImage: {
 				orangeGradient: 'linear-gradient(180deg, rgb(255, 146, 104) 0%, rgb(249, 92, 31) 100%);',
@@ -27,8 +28,8 @@ module.exports = {
 			padding: '0.5rem',
 		},
 		screens: {
-			sm: '640px',
-			md: '768px',
+			sm: '576px',
+			md: '810px',
 			lg: '1024px',
 			xl: '1200px',
 			'2xl': '1536px',
