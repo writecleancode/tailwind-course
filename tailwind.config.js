@@ -15,7 +15,7 @@ module.exports = {
 				silverGrey: '#bcbcc2',
 				lightGrey: '#c4c4c4',
 				dirtyWhite: '#fafafa',
-				white20: '#ffffff33',
+				white20: '#ffffff29',
 				deepBlue: '#0000ee',
 				orange: 'rgb(255, 146, 104)',
 			},
