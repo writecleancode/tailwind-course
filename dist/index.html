@@ -4,70 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS | Cards Project</title>
+    <title>Tailwind CSS | Timeline Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="flex justify-center items-center min-h-screen p-8">
+<body class="flex justify-center min-h-screen p-16">
 
-    <div class="flex gap-4">
-        <div class="group relative w-[300px]">
-            <img class="w-full" src="https://unsplash.it/300/500" alt="random image">
-            <div class="absolute inset-0 bg-black/[.5]"></div>
-            <div
-                class="absolute left-1/2 bottom-0 -translate-x-1/2 p-8 w-full text-white transition-colors duration-300 group-hover:bg-purple-400/50">
-                <p class="mb-4 text-xl font-[200] opacity-0 transition-opacity duration-300 group-hover:opacity-100">ABC
-                </p>
-                <div>
-                    <p class="text-6xl font-[700]">01</p>
-                    <p class="text-xl">Business Strategy</p>
-                </div>
-            </div>
-        </div>
-        <div class="group relative w-[300px]">
-            <img class="w-full" src="https://unsplash.it/300/500" alt="random image">
-            <div class="absolute inset-0 bg-black/[.5]"></div>
-            <div
-                class="absolute left-1/2 bottom-0 -translate-x-1/2 p-8 w-full text-white transition-colors duration-300 group-hover:bg-blue-400/50">
-                <p class="mb-4 text-xl font-[200] opacity-0 transition-opacity duration-300 group-hover:opacity-100">ABC
-                </p>
-                <div>
-                    <p class="text-6xl font-[700]">02</p>
-                    <p class="text-xl">Business Strategy</p>
-                </div>
-            </div>
-        </div>
-        <div class="group relative w-[300px]">
-            <img class="w-full" src="https://unsplash.it/300/500" alt="random image">
-            <div class="absolute inset-0 bg-black/[.5]"></div>
-            <div
-                class="absolute left-1/2 bottom-0 -translate-x-1/2 p-8 w-full text-white transition-colors duration-300 group-hover:bg-green-400/50">
-                <p class="mb-4 text-xl font-[200] opacity-0 transition-opacity duration-300 group-hover:opacity-100">ABC
-                </p>
-                <div>
-                    <p class="text-6xl font-[700]">03</p>
-                    <p class="text-xl">Business Strategy</p>
-                </div>
-            </div>
-        </div>
-        <div class="group relative w-[300px]">
-            <img class="w-full" src="https://unsplash.it/300/500" alt="random image">
-            <div class="absolute inset-0 bg-black/[.5]"></div>
-            <div
-                class="absolute left-1/2 bottom-0 -translate-x-1/2 p-8 w-full text-white transition-colors duration-300 group-hover:bg-amber-400/50">
-                <p class="mb-4 text-xl font-[200] opacity-0 transition-opacity duration-300 group-hover:opacity-100">ABC
-                </p>
-                <div>
-                    <p class="text-6xl font-[700]">04</p>
-                    <p class="text-xl">Business Strategy</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <ul class="flex flex-col mx-auto max-w-[900px] space-y-16">
+        <li class="relative w-1/2 p-16 border-[3px] border-blue-700 rounded-lg transition-shadow hover:shadow-xl
+        
+        odd:self-start odd:-translate-x-8 even:self-end even:translate-x-8
+
+        before:content-['2016'] before:absolute before:border-b-2 before:border-blue-700 before:font-[700]
+
+        odd:before:-right-32 odd:before:pl-24 odd:before:pr-8
+        even:before:-left-32 even:before:pr-24 even:before:pl-8
+        
+        ">
+            <h3 class="mb-4 font-medium text-3xl uppercase">Karta nr 1</h3>
+            <p class="tracking-wider">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias praesentium
+                repellendus quae. Optio provident tenetur modi reiciendis necessitatibus, fugit hic!</p>
+        </li>
+        <li class="relative w-1/2 p-16 border-[3px] border-blue-700 rounded-lg transition-shadow hover:shadow-xl
+        
+        odd:self-start odd:-translate-x-8 even:self-end even:translate-x-8
+
+        before:content-['2018'] before:absolute before:border-b-2 before:border-blue-700 before:font-[700]
+
+        odd:before:-right-32 odd:before:pl-24 odd:before:pr-8
+        even:before:-left-32 even:before:pr-24 even:before:pl-8
+        
+        ">
+            <h3 class="mb-4 font-medium text-3xl uppercase">Karta nr 2</h3>
+            <p class="tracking-wider">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias praesentium
+                repellendus quae. Optio provident tenetur modi reiciendis necessitatibus, fugit hic!</p>
+        </li>
+        <li class="relative w-1/2 p-16 border-[3px] border-blue-700 rounded-lg transition-shadow hover:shadow-xl
+        
+        odd:self-start odd:-translate-x-8 even:self-end even:translate-x-8
+
+        before:content-['2019'] before:absolute before:border-b-2 before:border-blue-700 before:font-[700]
+
+        odd:before:-right-32 odd:before:pl-24 odd:before:pr-8
+        even:before:-left-32 even:before:pr-24 even:before:pl-8
+        
+        ">
+            <h3 class="mb-4 font-medium text-3xl uppercase">Karta nr 3</h3>
+            <p class="tracking-wider">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias praesentium
+                repellendus quae. Optio provident tenetur modi reiciendis necessitatibus, fugit hic!</p>
+        </li>
+        <li class="relative w-1/2 p-16 border-[3px] border-blue-700 rounded-lg transition-shadow hover:shadow-xl
+        
+        odd:self-start odd:-translate-x-8 even:self-end even:translate-x-8
+
+        before:content-['2020'] before:absolute before:border-b-2 before:border-blue-700 before:font-[700]
+
+        odd:before:-right-32 odd:before:pl-24 odd:before:pr-8
+        even:before:-left-32 even:before:pr-24 even:before:pl-8
+        
+        ">
+            <h3 class="mb-4 font-medium text-3xl uppercase">Karta nr 4</h3>
+            <p class="tracking-wider">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias praesentium
+                repellendus quae. Optio provident tenetur modi reiciendis necessitatibus, fugit hic!</p>
+        </li>
+        <li class="relative w-1/2 p-16 border-[3px] border-blue-700 rounded-lg transition-shadow hover:shadow-xl
+        
+        odd:self-start odd:-translate-x-8 even:self-end even:translate-x-8
+
+        before:content-['2022'] before:absolute before:border-b-2 before:border-blue-700 before:font-[700]
+
+        odd:before:-right-32 odd:before:pl-24 odd:before:pr-8
+        even:before:-left-32 even:before:pr-24 even:before:pl-8
+        
+        ">
+            <h3 class="mb-4 font-medium text-3xl uppercase">Karta nr 5</h3>
+            <p class="tracking-wider">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias praesentium
+                repellendus quae. Optio provident tenetur modi reiciendis necessitatibus, fugit hic!</p>
+        </li>
+    </ul>
+
 
 </body>
 
